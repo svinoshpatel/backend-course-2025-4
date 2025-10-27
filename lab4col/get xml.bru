@@ -5,14 +5,14 @@ meta {
 }
 
 get {
-  url: http://localhost:3001?variety=true
+  url: http://localhost:3001?variety=true&min_petal_length=2
   body: none
   auth: inherit
 }
 
 params:query {
   variety: true
-  ~min_petal_length: 2
+  min_petal_length: 2
 }
 
 settings {

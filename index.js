@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
 			.filter(line => line.trim().length > 0)
 			.map(line => JSON.parse(line));
 
-		if (params.has('variety')) {
+		if (params.get('variety') === 'true') {
 			data = data.map(item => ({
 				'petal.length': item['petal.length'],
 				'petal.width': item['petal.width'],
